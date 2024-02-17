@@ -1,0 +1,132 @@
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#projects .Psearch {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#projects .Psearch input {
+  width: 30%;
+  min-width: 300px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: 3px solid var(--main-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#projects .Psearch h5 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+#projects .projects {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #ededed 0%, #ffffff 100%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#projects .projects .project {
+  width: 300px;
+  min-width: 300px;
+  height: 450px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+#projects .projects .project:hover {
+  box-shadow: 0 0 15px 2px #000;
+}
+
+#porjects .projects .project .image {
+  width: 100%;
+}
+
+#projects .projects .project .image img {
+  width: 100%;
+  height: 100% !important;
+}
+
+#projects .projects .project .data {
+  width: 100%;
+  height: calc(100% - 190px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+
+#projects .projects .project .data h3 {
+  font-size: 1.5rem;
+}
+
+#projects .projects .project .data p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#projects .projects .project .data .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .projects .project .data a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  padding: 5px;
+  margin: 0 10px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
