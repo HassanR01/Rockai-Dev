@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-
 
 const getProjects = async () => {
     const apiUrl = process.env.API_URL
+
     try {
         const res = await fetch(`${apiUrl}/api/projects`, {
             cache: 'no-store',
@@ -15,7 +14,7 @@ const getProjects = async () => {
         }
         return res.json()
     } catch (error) {
-        console.log(error);
+        console.log('Fetching Error' + error);
     }
 
 }

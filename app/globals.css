@@ -5,7 +5,7 @@
   --main-color: #020940;
   --primary-color: #03fefc;
   --white-color: #ffffff;
-  --main-transition: all 1s;
+  --main-transition: all 1s ease;
 }
 
 html {
