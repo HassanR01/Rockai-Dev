@@ -28,7 +28,6 @@ body {
   background-color: var(--white-color);
   color: var(--main-color);
   font-family: var(--main-font);
-  cursor: none;
 }
 
 ul {

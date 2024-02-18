@@ -1,8 +1,6 @@
 import TitlePage from '../Components/main/titlePage'
 import './projects.css'
-import Image from 'next/image'
-import Link from 'next/link'
-import ProjectList from '../Components/Projects/projectList'
+import ProjectList from '../Components/projectList'
 
 export default function Projects() {
   return (
