@@ -20,10 +20,10 @@ const getProjects = async () => {
 }
 
 export default async function ProjectList() {
-    // const { projects } = await getProjects();
+    const { projects } = await getProjects();
     return (
         <>
-            {/* {projects.map(project => (
+            {projects.length > 0 && projects.map(project => (
                 <div className="project" key={project._id}>
                     <div className="image">
                         <Image src={project.image} width={400} height={100} alt={project.title} />
@@ -36,7 +36,7 @@ export default async function ProjectList() {
                         </div>
                     </div>
                 </div>
-            ))} */}
+            ))}
 
         </>
     )
