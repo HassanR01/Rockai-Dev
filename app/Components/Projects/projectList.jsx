@@ -6,7 +6,7 @@ import React from 'react'
 const getProjects = async () => {
     const apiUrl = process.env.API_URL
     try {
-        const res = await fetch(`http://localhost:3000/api/projects`, {
+        const res = await fetch(`${apiUrl}/api/projects`, {
             cache: 'no-store',
         })
 
