@@ -19,7 +19,6 @@ import FeedbacksSwiper from './Components/home/FeedbacksSwiper'
 import logoRockAi from '../public/logo-Rockai.png'
 import aidec from '../public/aidec.png'
 
-
 export default function Home() {
 
   return (

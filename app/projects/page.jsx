@@ -1,6 +1,6 @@
 import TitlePage from '../Components/main/titlePage'
 import './projects.css'
-import ProjectList from '../Components/projectList'
+import ProjectList from '../Components/projects/projectList'
 
 export default function Projects() {
   return (

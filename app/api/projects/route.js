@@ -3,9 +3,9 @@ import Project from "@/models/projects";
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
-    const { title, link, image, description, technologies } = await req.json()
+    const { title, link, image, description, category } = await req.json()
     await connectMongoDB();
-    await Project.create({ title, link, image, description, technologies })
+    await Project.create({ title, link, image, description, category })
     return NextResponse.json({ message: 'Project Created' }, { status: 201 })
 }
 

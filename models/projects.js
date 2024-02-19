@@ -5,9 +5,7 @@ const projectSchema = new Schema({
     image: String,
     link: String,
     description: String,
-    technologies: [{
-        title: String,
-    }]
+    category: String,
 }, { timestamps: true })
 
 const Project = mongoose.models.Project || mongoose.model('Project', projectSchema)

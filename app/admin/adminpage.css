@@ -1,0 +1,368 @@
+.dashboard {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.dashboard .partIcons {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard .partIcons .partIcon {
+  padding: 10px;
+  background-color: var(--white-color);
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: var(--main-transition);
+  cursor: pointer;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.dashboard .partIcons .partIcon:hover {
+  filter: drop-shadow(0px 0px 5px #00c9fc);
+  -webkit-filter: drop-shadow(0px 0px 5px #00c9fc);
+}
+
+.dashboard .partIcons .partIcon.selected {
+  filter: drop-shadow(0px 0px 5px #00c9fc);
+  -webkit-filter: drop-shadow(0px 0px 5px #00c9fc);
+}
+
+.dashboard .partations {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard .partations .partation {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 20px;
+  margin: 0;
+}
+
+.dashboard .partations .partation h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 20px 0;
+  filter: drop-shadow(0px 0px 20px #00c9fc);
+  -webkit-filter: drop-shadow(0px 0px 20px #00c9fc);
+}
+
+.dashboard .partations .partation.active {
+  display: flex;
+}
+
+/* Add Project */
+.dashboard .partations .partation .addProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard .partations .partation .addProject form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard .partations .partation .addProject form .inputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard .partations .partation .addProject form .inputs input,
+textarea {
+  width: calc(90% / 2);
+  max-width: 500px;
+  min-width: 300px;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: var(--main-color);
+  background-color: var(--white-color);
+  border-bottom: 3px solid var(--primary-color);
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.dashboard .partations .partation .addProject form .inputs textarea {
+  min-height: 100px;
+}
+
+.dashboard .partations .partation .addProject form button {
+  width: 250px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #00ff00;
+  color: var(--main-color);
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
+.dashboard .partations .partation .addProject form button:hover {
+  background-color: var(--white-color);
+  filter: drop-shadow(0px 0px 10px #00c9fc);
+  -webkit-filter: drop-shadow(0px 0px 10px #00c9fc);
+}
+
+.dashboard .partations .partation .addProject form h3 {
+  font-size: 1.3rem;
+  color: red;
+}
+
+/* Projects List */
+.projectsList {
+  width: 80%;
+  border-top: 5px solid var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: var(--white-color);
+}
+
+.projectsList .evid {
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projectsList .evid h3 {
+  font-size: 1.3rem;
+}
+
+.projectsList .projects {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #002880;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70vh;
+}
+
+.projectsList .projects .project {
+  width: 100%;
+  margin: 5px 0;
+  border-left: 5px solid var(--primary-color);
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.projectsList .projects .project:hover {
+  background-color: #020080;
+}
+
+.projectsList .projects .project .data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white-color);
+}
+
+.projectsList .projects .project .data h3 {
+  font-size: 1.3rem;
+}
+.projectsList .projects .project .data a {
+  font-size: 1.2rem;
+  padding: 5px 30px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.projectsList .projects .project:hover .editData {
+  height: 500px;
+}
+
+.projectsList .projects .project .editData {
+  height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  overflow: hidden;
+}
+
+.projectsList .projects .project .editData form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsList .projects .project .editData form .inputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsList .projects .project .editData form .inputs input,
+textarea {
+  width: calc(90% / 2);
+  max-width: 500px;
+  min-width: 300px;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: var(--main-color);
+  background-color: var(--white-color);
+  border-bottom: 3px solid var(--primary-color);
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.projectsList .projects .project .editData form .inputs textarea {
+  min-height: 130px;
+}
+
+.projectsList .projects .project .editData form button {
+  width: 250px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #00ff00;
+  color: var(--main-color);
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.projectsList .projects .project .editData form button:hover {
+  background-color: var(--white-color);
+  filter: drop-shadow(0px 0px 10px #00c9fc);
+  -webkit-filter: drop-shadow(0px 0px 10px #00c9fc);
+}
+
+.projectsList .projects .project .editData form h3 {
+  font-size: 1.3rem;
+  color: red;
+}
+
+.projectsList .projects .project .editData > button {
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #ff0000;
+  color: var(--main-color);
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
