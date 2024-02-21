@@ -182,6 +182,10 @@ export default function Home() {
         <div id="serTopic">
 
         </div>
+        <div className="directions">
+          <Link href={'/addOrder'} >Order Now</Link>
+          <Link href={'/projects'} >Our Projects</Link>
+        </div>
       </section>
 
       {/* Feedbacks Section */}

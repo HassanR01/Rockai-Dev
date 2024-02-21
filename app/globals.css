@@ -232,12 +232,17 @@ header nav ul li:hover::before {
     background-color: var(--white-color);
     padding: 0;
     overflow: visible;
+    justify-content: space-between;
+  }
+  header .logo {
+    padding: 10px 20px;
   }
   header nav {
     overflow: visible;
+    padding: 10px 20px;
   }
   header nav ul.active {
-    height: 250px;
+    height: 230px;
   }
   header nav ul {
     position: absolute;
@@ -594,8 +599,7 @@ header nav ul li:hover::before {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background-color: var(--main-color);
-  color: var(--white-color);
+  color: var(--main-color);
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
@@ -612,6 +616,28 @@ header nav ul li:hover::before {
   filter: none !important;
   -webkit-filter: none !important;
   box-shadow: 0 0 10px 2px rgb(66, 66, 66);
+}
+
+#services .directions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#services .directions a {
+  margin: 10px 20px;
+  text-align: center;
+  padding: 10px;
+  width: 130px;
+  color: var(--white-color);
+  background-color: var(--main-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 /*  Feedbacks Section Style */
@@ -664,7 +690,7 @@ header nav ul li:hover::before {
   bottom: -40px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   #feedbacks .swiper-slide p {
     font-size: 1.1rem;
     max-width: 270px;
