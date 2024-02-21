@@ -3,10 +3,11 @@ import Footer from "./Components/main/footer";
 import Header from "./Components/main/header";
 import './globals.css'
 import Cursor from "./Components/main/cursor";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Rockai Dev",
-  description: "Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet",
+  description: "The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet | أفضل شركة برمجة في مصر والشرق الأوسط",
 };
 
 export default function RootLayout({ children }) {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <Cursor />
         <Script src="JS/main.js" />
+        <Analytics />
       </body>
     </html>
   );
