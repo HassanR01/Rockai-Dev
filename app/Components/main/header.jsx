@@ -18,6 +18,11 @@ export default function Header() {
           <li><Link href={'/addOrder'}>Order</Link></li>
           <li><Link href={'contact_us'}>Contact</Link></li>
         </ul>
+        <div className="brgIcon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
   )

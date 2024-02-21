@@ -376,9 +376,10 @@ textarea {
 }
 
 .orders .order {
+  position: relative;
   width: calc(90% / 2);
   max-width: 500px;
-  min-width: 300;
+  min-width: 300px;
   height: 500px;
   margin: 20px;
   display: flex;
@@ -392,6 +393,7 @@ textarea {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
 }
 
 .orders .order > h3 {
@@ -479,5 +481,8 @@ textarea {
 }
 
 .orders .order > h6 {
+  position: absolute;
   font-size: 1rem;
+  bottom: 10px;
+  left: 15px;
 }
