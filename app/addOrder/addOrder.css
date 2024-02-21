@@ -1,0 +1,96 @@
+.addOrder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #ffffff 0%, #ededed 100%);
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.addOrder form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.addOrder form div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.addOrder form div input,
+textarea {
+  width: calc(90% / 2);
+  max-width: 500px;
+  min-width: 300px;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: var(--main-color);
+  background-color: var(--white-color);
+  border-bottom: 3px solid var(--main-color);
+  font-family: var(--main-font);
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  box-shadow: 0 5px 10px 2px #a5a5a5;
+}
+
+.addOrder form div input:focus {
+  box-shadow: 0 7px 20px 2px #00cafc57;
+}
+
+.addOrder form h3 {
+  font-size: 1.3rem;
+  color: red;
+}
+
+.addOrder form button {
+  width: 250px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.addOrder form button:hover {
+  filter: drop-shadow(0px 0px 10px #00c9fc);
+  -webkit-filter: drop-shadow(0px 0px 10px #00c9fc);
+}
+
