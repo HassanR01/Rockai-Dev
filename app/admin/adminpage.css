@@ -480,6 +480,27 @@ textarea {
   justify-content: center;
 }
 
+.orders .order button {
+  background-color: red;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--main-font);
+  color: var(--white-color);
+  padding: 5px 10px;
+  width: 100px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .orders .order > h6 {
   position: absolute;
   font-size: 1rem;

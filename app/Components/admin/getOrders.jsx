@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import DeleteOrder from './buttons/DeleteOrder'
 
 const getOrders = async () => {
   const apiUrl = process.env.API_URL
@@ -15,6 +16,7 @@ const getOrders = async () => {
 
 export default async function GetOrders() {
   const { orders } = await getOrders()
+
   return (
     <>
       <div className="orders">
@@ -33,6 +35,7 @@ export default async function GetOrders() {
               <h5>Details: {order.details}</h5>
               <Link href={order.exLink} target='_blank'>Example Link</Link>
             </div>
+            <DeleteOrder id={order._id} name={order.name} />
             <h6>Send Date: {order.createdAt.slice(0, 10)}</h6>
           </div>
         ))}
