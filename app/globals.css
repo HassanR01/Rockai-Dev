@@ -228,6 +228,7 @@ header nav ul li:hover::before {
 
 @media (max-width: 724px) {
   header {
+    width: 100% !important;
     position: fixed;
     background-color: var(--white-color);
     padding: 0;
