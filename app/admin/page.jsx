@@ -4,11 +4,19 @@ import TitlePage from '../Components/main/titlePage'
 import projects from '../../public/checkmark.svg'
 import addProject from '../../public/add-file.svg'
 import orders from '../../public/orders.svg'
-import './adminpage.css'
 import GetProjects from '../Components/admin/getProjects'
 import AddProject from '../Components/admin/addProject'
 import GetOrders from '../Components/admin/getOrders'
 import Script from 'next/script'
+import './adminpage.css'
+
+
+export const metadata = {
+    title: "Dashboard | Rockai Dev",
+    description: "The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet | أفضل شركة برمجة في مصر والشرق الأوسط",
+    
+};
+
 
 export default function Admin() {
     return (

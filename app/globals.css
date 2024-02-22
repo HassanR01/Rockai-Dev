@@ -541,6 +541,22 @@ header nav ul li:hover::before {
     font-size: 1.5rem;
   }
 
+  .how-done .way .team .trics {
+    border: none;
+  }
+
+  .how-done .way .team .trics.down:hover {
+    border: none;
+  }
+
+  .how-done .way .team .trics.up:hover {
+    border: none;
+  }
+
+  .how-done .way .team.top .trics.down .rot {
+    flex-direction: column;
+  }
+
   .how-done .way {
     flex-direction: column;
   }
