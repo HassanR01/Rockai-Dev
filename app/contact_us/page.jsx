@@ -14,8 +14,9 @@ export default function Contactus() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+
   };
+
   return (
     <>
       <TitlePage title={'Contact Us'} />
@@ -45,6 +46,7 @@ export default function Contactus() {
             <input
               type="text"
               id="pers"
+              value={organization}
               onChange={(e) => setorganization(e.target.value)}
               required
             />
@@ -52,6 +54,7 @@ export default function Contactus() {
             <input
               type="text"
               id="pers"
+              value={jobTitle}
               onChange={(e) => setJobTitle(e.target.value)}
               required
             />
@@ -61,6 +64,7 @@ export default function Contactus() {
             <input
               type="pers"
               id="input"
+              value={phone}
               onChange={(e) => setphone(e.target.value)}
             />
           </div>
