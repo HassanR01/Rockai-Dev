@@ -26,7 +26,7 @@ export default function FeedbacksSwiper() {
             >
                 <SwiperSlide>
                     <h3>Ahmed Farahat</h3>
-                    <h4>Media Buyer at Udjat</h4>
+                    <h4>Project Manager</h4>
                     <p>Thank you so much Rockai Dev for your effort and high quality you are generating to us</p>
                 </SwiperSlide>
                 <SwiperSlide>
