@@ -9,7 +9,7 @@ import Head from "next/head";
 
 
 export const metadata = {
-  title: "Rockai Dev",
+  title: "Rockai Dev company - شركة روكاي ديف",
   description: "The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet | أفضل شركة برمجة في مصر والشرق الأوسط",
 };
 

@@ -66,15 +66,14 @@ export default function AddOrder() {
 
           <div className="business">
             <input type="text" name="Business Name" value={bName} onChange={(e) => setBName(e.target.value)} placeholder='Business Name..' />
-            <input type="text" name='service' list='service' value={service} onChange={(e) => setService(e.target.value)} placeholder='Type Of Service..' />
-            <datalist id="service">
+            <select type="text" name='service' value={service} onChange={(e) => setService(e.target.value)} placeholder='Type Of Service..'>
               <option value="Web Development" >Web Development</option>
               <option value="Mobile App Development" >Mobile App Development</option>
               <option value="Desktop App Development" >Desktop App Development</option>
               <option value="AI Development" >AI Development</option>
               <option value="Systems" >Systems</option>
               <option value="SEO" >SEO</option>
-            </datalist>
+            </select>
             <input type="text" name="link" value={exLink} onChange={(e) => setExLink(e.target.value)} placeholder='Example Link' />
             <input type="text" name="info" list='hunous' value={hunous} onChange={(e) => setHunous(e.target.value)} placeholder='How You Know Rockai Dev' />
             <datalist id="hunous">
