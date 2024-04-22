@@ -4,7 +4,7 @@ import ProjectList from '../Components/projects/projectList'
 
 
 export const metadata = {
-  title: "Projects | Rockai Dev",
+  title: "Projects | Rockai Dev - مشاريع",
   description: "The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet | أفضل شركة برمجة في مصر والشرق الأوسط",
 };
 

@@ -22,9 +22,13 @@ const getProjects = async () => {
 export default async function ProjectList() {
     const { projects } = await getProjects();
     
+    let sortProject = projects
+
+    sortProject.reverse()
+
     return (
         <>
-            {projects.length > 0 && projects.map(project => (
+            {sortProject.length > 0 && sortProject.map(project => (
                 <div className={`project ${project.category}`} key={project._id}>
                     <div className="image">
                         <Image src={project.image} width={400} height={100} alt={project.title} />
