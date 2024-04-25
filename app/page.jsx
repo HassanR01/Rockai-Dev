@@ -19,6 +19,13 @@ import FeedbacksSwiper from './Components/home/FeedbacksSwiper'
 import logoRockAi from '../public/logo-Rockai.png'
 import aidec from '../public/aidec.png'
 
+
+export const metadata = {
+  title: "Home | Rockai Dev",
+  description: "The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet | أفضل شركة برمجة في مصر والشرق الأوسط",
+};
+
+
 export default function Home() {
 
   return (
