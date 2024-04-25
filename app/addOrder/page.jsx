@@ -3,6 +3,11 @@ import React, { useState } from 'react'
 import TitlePage from '../Components/main/titlePage'
 import './addOrder.css'
 
+export const metadata = {
+  title: "Add Order | Rockai Dev",
+  description: "The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet | أفضل شركة برمجة في مصر والشرق الأوسط",
+};
+
 export default function AddOrder() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
