@@ -27,7 +27,6 @@ export default async function GetOrders() {
               <h2>Mr. {order.name}</h2>
               <h5>{order.email}</h5>
               <Link href={`tel:${order.phoneNum}`} target='_blank'>+{order.phoneNum}</Link>
-              <h3>Time To Call: {order.cDate}</h3>
               <h5>Came From: {order.hunous}</h5>
             </div>
             <div className="comp">
