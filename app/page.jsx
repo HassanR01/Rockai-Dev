@@ -34,8 +34,8 @@ export default function Home() {
         backgroundImage: `url(${bgimage.src})`
       }}>
         <div className='text'>
-          <h2>Welcome To The Future</h2>
-          <h2> Of <span>Technology</span> In Egypt </h2>
+          <h2 className='font-bold'>Welcome To The Future</h2>
+          <h2 className='font-bold'>Of <span>Technology</span> In Egypt </h2>
           <h5>We Are Working To Help Organizations Grow Up.</h5>
           <p>We are deeply inclined towards artificial intelligence and eagerly anticipate leveraging it to shape Egypt's future.</p>
           <Link href={'#services'}>Our Services</Link>
@@ -45,7 +45,7 @@ export default function Home() {
       {/* How Done */}
       <section className="how-done" id="howdone">
         <div className="title">
-          <h3>Stages of building your great Software with Rockai Dev...</h3>
+          <h3 className='font-semibold'>Stages of Building Your Great Software with Rockai Dev...</h3>
         </div>
 
         <div className="way">
@@ -150,17 +150,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
-
-
         </div>
       </section>
 
       {/* Services Section */}
       <section id='services'>
-        <h2>Services</h2>
-        <div className="services">
+        <h2 className='font-semibold'>Services</h2>
+        <div className="services text-center">
           <Link href={'#serTopic'} className="service" data-service='appDev'>
             <Image src={appDevI} alt='Mobile App Development Rockai Dev' width={150} height={150} />
             <h3>Mobile App Development</h3>
@@ -189,7 +186,7 @@ export default function Home() {
         <div id="serTopic">
 
         </div>
-        <div className="directions">
+        <div className="directions text-lg">
           <Link href={'/addOrder'} >Order Now</Link>
           <Link href={'/projects'} >Our Projects</Link>
         </div>
@@ -197,7 +194,7 @@ export default function Home() {
 
       {/* Feedbacks Section */}
       <section id='feedbacks'>
-        <h2>Testimonials</h2>
+        <h2 className='font-semibold'>Testimonials</h2>
         <FeedbacksSwiper />
       </section>
 

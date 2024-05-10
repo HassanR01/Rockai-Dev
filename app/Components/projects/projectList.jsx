@@ -34,7 +34,7 @@ export default async function ProjectList() {
                         <Image src={project.image} width={400} height={100} alt={project.title} />
                     </div>
                     <div className="data">
-                        <h3>{project.title}</h3>
+                        <h3 className='font-bold'>{project.title}</h3>
                         {project.description.split(' ').length > 13 ? (<p title={project.description}>{project.description.split(" ").slice(0, 13).join(' ')}...</p>) : (<p>{project.description}.</p>)}
                         <div className="links">
                             <Link className='demo' href={project.link} target='_blank'>visite</Link>

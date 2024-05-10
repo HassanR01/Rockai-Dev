@@ -54,7 +54,7 @@ export default function AddOrder() {
     <>
       <TitlePage title={'Add Order'} />
       <section className="addOrder">
-        <h2>Hello Mr. {name}</h2>
+        <h2 className='font-bold text-xl'>Hello Mr. {name}</h2>
         <form onSubmit={handelOrderForm} onChange={() => setAlert('')}>
           <div className="sender">
             <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder='Name..' />

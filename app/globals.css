@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --main-font: "Tajawal", sans-serif;
   --main-color: #020940;
   --primary-color: #03fefc;
   --white-color: #ffffff;
@@ -27,7 +30,6 @@ body {
   justify-content: center;
   background-color: var(--white-color);
   color: var(--main-color);
-  font-family: var(--main-font);
 }
 
 ul {

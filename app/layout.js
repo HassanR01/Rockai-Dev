@@ -4,8 +4,6 @@ import Header from "./Components/main/header";
 import './globals.css'
 import Cursor from "./Components/main/cursor";
 import { Analytics } from "@vercel/analytics/react"
-import logoRockAi from '../public/logo-Rockai.png'
-import Head from "next/head";
 
 
 export const metadata = {
@@ -20,10 +18,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="og:image" content={logoRockAi} />
-      </Head>
-      <body suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true} className="font-mainFont">
         <Header />
         {children}
         <Footer />

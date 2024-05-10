@@ -8,7 +8,7 @@ export default function Header() {
     <header id='header'>
       <div className="logo">
         <Image src={logoRockAi} alt="Rockai Dev's Logo" width={50} height={50} />
-        <h1>Rockai<span>Dev</span></h1>
+        <h1 className='text-3xl font-bold'>Rockai<span>Dev</span></h1>
       </div>
 
       <nav>

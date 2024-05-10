@@ -7,7 +7,7 @@ export default function TitlePage({ title }) {
       <section style={{
         backgroundImage: `url(${bgTitI.src})`,
       }} className={'TPage'}>
-        <h1>{title}</h1>
+        <h1 className='font-black'>{title}</h1>
       </section>
     </>
   )
