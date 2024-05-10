@@ -20,5 +20,5 @@ brgIcon.addEventListener('mouseover', () => {
     menu.classList.toggle('active')
 })
 brgIcon.addEventListener('mouseout', () => {
-    menu.classList.toggle('active')
+    menu.classList.remove('active')
 })

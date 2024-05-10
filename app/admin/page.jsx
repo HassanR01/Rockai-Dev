@@ -9,6 +9,7 @@ import AddProject from '../Components/admin/addProject'
 import GetOrders from '../Components/admin/getOrders'
 import Script from 'next/script'
 import './adminpage.css'
+import GetAsks from '../Components/admin/getAsks'
 
 
 export const metadata = {
@@ -27,6 +28,7 @@ export default function Admin() {
                     <li className="partIcon" data-partation="addProject"><Image src={addProject} width={40} height={40} alt='Add Projects Icon' /></li>
                     <li className="partIcon selected" data-partation="projects"><Image src={projects} width={40} height={40} alt='Projects Icon' /></li>
                     <li className="partIcon" data-partation="orders"><Image src={orders} width={40} height={40} alt='Orders Icon' /></li>
+                    <li className='partIcon' data-Partation="Asks"><Image src={'/AskIcon.png'} width={40} height={40} alt='Ask Icon Rockai Dev' /></li>
                 </ul>
                 <div className="partations">
                     {/* Projects Section */}
@@ -44,6 +46,11 @@ export default function Admin() {
                     {/* Orders Section */}
                     <section id="orders" className="partation">
                         <GetOrders />
+                    </section>
+
+                    {/* Asks Section */}
+                    <section id='Asks' className='partation'>
+                        <GetAsks />
                     </section>
                 </div>
             </section>

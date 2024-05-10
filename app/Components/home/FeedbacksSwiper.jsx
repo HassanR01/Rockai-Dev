@@ -10,7 +10,14 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-export default function FeedbacksSwiper() {
+import Link from 'next/link';
+export default function FeedbacksSwiper({ Asks }) {
+
+    const JustReviews = Asks.filter(ask => {
+        const Reviews = ask.reason === 'Review'
+        return Reviews
+    })
+
     return (
         <>
             <Swiper
@@ -24,21 +31,16 @@ export default function FeedbacksSwiper() {
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <h3 className='font-semibold'>Ahmed Farahat</h3>
-                    <h4 className='font-medium'>Project Manager</h4>
-                    <p>Thank you so much Rockai Dev for your effort and high quality you are generating to us</p>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <h3 className='font-semibold'>Mr. Shreif Riad</h3>
-                    <h4 className='font-medium'>Owner of Ceres Restaurant</h4>
-                    <p>Great Work, Rockai Dev will occupy its place in the market Soon and Thank you for your high Quality</p>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <h3 className='font-semibold'>ESA</h3>
-                    <h4 className='font-medium'>Egyptian Society for Astronomy</h4>
-                    <p>Rockai Dev is a company with high skills, accuracy and high quality of service, thank you</p>
-                </SwiperSlide>
+
+                {JustReviews.map(review => (
+                    <>
+                        <SwiperSlide>
+                            <h3 className='font-semibold'>Mr. {review.name}</h3>
+                            <Link href={'/projects'} className='font-bold mb-2'>{review.pProject} Project</Link>
+                            <p className='text-sm'>{review.message}</p>
+                        </SwiperSlide>
+                    </>
+                ))}
             </Swiper>
         </>
     )

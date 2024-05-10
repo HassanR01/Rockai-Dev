@@ -21,7 +21,7 @@ export default async function GetProjects() {
   return (
     <>
       <h2>Projects List</h2>
-      <div className="projectsList">
+      <div className="projectsList border-y-4 border-secColor">
         <div className="evid">
           <h3>Name</h3>
           <h3>Date</h3>

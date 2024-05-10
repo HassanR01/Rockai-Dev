@@ -162,8 +162,6 @@ textarea {
 /* Projects List */
 .projectsList {
   width: 80%;
-  border-top: 5px solid var(--primary-color);
-  border-bottom: 5px solid var(--primary-color);
   margin: 20px 10px;
   padding: 10px;
   border-radius: 20px;
@@ -506,4 +504,10 @@ textarea {
   font-size: 1rem;
   bottom: 10px;
   left: 15px;
+}
+
+th,td {
+  text-align: start;
+  padding: 5px;
+  border-bottom: 1px solid var(--primary-color);
 }

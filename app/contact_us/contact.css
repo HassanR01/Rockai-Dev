@@ -36,7 +36,8 @@
 }
 
 div input,
-textarea {
+textarea,
+select {
   width: calc(90% / 2);
   max-width: 500px;
   min-width: 300px;

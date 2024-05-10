@@ -25,9 +25,25 @@ export const metadata = {
   description: "The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet | أفضل شركة برمجة في مصر والشرق الأوسط",
 };
 
+const getAsks = async () => {
+  const apiUrl = process.env.API_URL
+  try {
+    const res = await fetch(`${apiUrl}/api/asks`, {
+      cache: 'no-store'
+    })
 
-export default function Home() {
+    if (!res.ok) {
+      throw new Error('Caonnot Fetch The Asks')
+    }
 
+    return res.json()
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export default async function Home() {
+  const { asks } = await getAsks()
   return (
     <>
       <section id="Home" style={{
@@ -195,7 +211,7 @@ export default function Home() {
       {/* Feedbacks Section */}
       <section id='feedbacks'>
         <h2 className='font-semibold'>Testimonials</h2>
-        <FeedbacksSwiper />
+        <FeedbacksSwiper Asks={asks} />
       </section>
 
       {/* Summary Section */}
