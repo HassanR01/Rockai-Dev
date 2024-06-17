@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Rockai Dev company - شركة روكاي ديف",
-  description: "The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet | أفضل شركة برمجة في مصر والشرق الأوسط",
+  description: "Rockai Dev: The Future of Technology In Egypt, The Best Programming Company in Egypt and Middel East | Specialists in various fields of programming and professionals in helping you build a permanent brand on the Internet |  روكاي ديف مستقبل التكنولوجيا في مصر ،أفضل شركة برمجة في مصر والشرق الأوسط",
 };
 
 export const viewport = {

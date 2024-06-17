@@ -50,8 +50,7 @@ export default async function Home() {
         backgroundImage: `url(${bgimage.src})`
       }}>
         <div className='text'>
-          <h2 className='font-bold'>Welcome To The Future</h2>
-          <h2 className='font-bold'>Of <span>Technology</span> In Egypt </h2>
+          <h2 className='font-bold '>Welcome To The Future of <span>Technology</span> In Egypt </h2>
           <h5>We Are Working To Help Organizations Grow Up.</h5>
           <p>We are deeply inclined towards artificial intelligence and eagerly anticipate leveraging it to shape Egypt's future.</p>
           <Link href={'#services'}>Our Services</Link>
@@ -174,27 +173,27 @@ export default async function Home() {
       <section id='services'>
         <h2 className='font-semibold'>Services</h2>
         <div className="services text-center">
-          <Link href={'#serTopic'} className="service" data-service='appDev'>
+          <Link href={'#serTopic'} className="service h-60 shadow-sm hover:shadow-2xl" data-service='appDev'>
             <Image src={appDevI} alt='Mobile App Development Rockai Dev' width={150} height={150} />
             <h3>Mobile App Development</h3>
           </Link>
-          <Link href={'#serTopic'} className="service" data-service='webDev'>
+          <Link href={'#serTopic'} className="service h-60 shadow-sm hover:shadow-2xl" data-service='webDev'>
             <Image src={webDevI} alt='Web App Development Rockai Dev' width={150} height={150} />
             <h3>Website Development</h3>
           </Link>
-          <Link href={'#serTopic'} className="service" data-service='deskDev'>
+          <Link href={'#serTopic'} className="service h-60 shadow-sm hover:shadow-2xl" data-service='deskDev'>
             <Image src={deskDevI} alt='Desktop App Development Rockai Dev' width={150} height={150} />
             <h3>Desktop App Development</h3>
           </Link>
-          <Link href={'#serTopic'} className="service" data-service='SEO'>
+          <Link href={'#serTopic'} className="service h-60 shadow-sm hover:shadow-2xl" data-service='SEO'>
             <Image src={SEOI} alt='SEO Rockai Dev' width={150} height={150} />
             <h3>SEO</h3>
           </Link>
-          <Link href={'#serTopic'} className="service" data-service='system'>
+          <Link href={'#serTopic'} className="service h-60 shadow-sm hover:shadow-2xl" data-service='system'>
             <Image src={systemsI} alt='System Development Rockai Dev' width={150} height={150} />
             <h3>Systems</h3>
           </Link>
-          <Link href={'#serTopic'} className="service" data-service='ai'>
+          <Link href={'#serTopic'} className="service h-60 shadow-sm hover:shadow-2xl" data-service='ai'>
             <Image src={AiI} alt='Ai Development Rockai Dev' width={150} height={150} />
             <h3>Artificial intelligence</h3>
           </Link>

@@ -632,12 +632,6 @@ header nav ul li:hover::before {
   margin-top: 10px;
 }
 
-#services .services .service:hover {
-  filter: none !important;
-  -webkit-filter: none !important;
-  box-shadow: 0 0 10px 2px rgb(66, 66, 66);
-}
-
 #services .directions {
   width: 100%;
   display: flex;
