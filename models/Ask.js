@@ -7,7 +7,7 @@ const askScehem = new Schema({
     reason: String,
     message: String,
     pProject: String
-})
+}, {timestamps: true})
 
 const Ask = mongoose.models.Ask || mongoose.model('Ask', askScehem)
 
